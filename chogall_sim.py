@@ -9,7 +9,7 @@ class Configuration:
     party_size_affects_players = True   # if this is True, k friends in a party means there are (n - k) chances for Cho'gall, where n is the number of players per match
                                         # False means that the chance for Cho'gall is always the same, the friend party size does not affect the chance of Cho'gall appearing in a particular match
     queue_independently = True          # if this is True, each friend queues independently
-                                        # if this is false, all friends queue together
+                                        # if this is False, all friends queue together
     num_samples = 1000                  # the number of random samples to try
 
 # returns n choose k
