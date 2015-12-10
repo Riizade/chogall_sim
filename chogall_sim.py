@@ -48,8 +48,7 @@ def run_simulation(config):
         # once the Cho'gall has been unlocked for this sample
         avg_matches_to_unlock += float(attempts) / float(config.num_samples) # compute the average in progress
     # once all samples have been completed
-    return avg_matches_to_unlock
-# returns the probability of at least k successes using the given binomial distribution
+    return avg_matches_to_unlock # returns the probability of at least k successes using the given binomial distribution
 
 
 # test
