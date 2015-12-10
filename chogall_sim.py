@@ -12,10 +12,13 @@ class Configuration:
                                         # if this is False, all friends queue together
     num_samples = 1000                  # the number of random samples to try
 
+
 # returns n choose k
 def nCk(n, k):
     return math.factorial(n) / (math.factorial(k) * math.factorial(n-k)) # n! / (k!*(n-k)!)
 
+
+# returns the probability of getting at least k successes in a binomial distribution with the given parameters
 def binomial_distribution(n, p, k):
     prob = 0.0 # the total probability of at least k successes
     for i in range(k, n): # for each acceptable number of successes (k-n)
@@ -58,10 +61,10 @@ c2 = Configuration()
 c2.queue_independently = False
 
 c3 = Configuration()
-c3.unlock_games = 5
+c3.unlock_games = 100
 
 c4 = Configuration()
-c4.unlock_games = 5
+c4.unlock_games = 100
 c4.queue_independently = False
 
 print("1 game to unlock, queuing separately")
